@@ -1,8 +1,10 @@
 package ghozti.calc;
 
+import ghozti.calc.equations.Algebra;
+
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
+        System.out.println(Algebra.pointSlope(2,10,-3));
     }
 }

@@ -7,8 +7,13 @@ public class Algebra {
     }
 
     public static String pointSlope(double x1, double y1, double m){
-        //y - y1 = m(x + x1)
-        String step1 = m + "x" + (m*x1 > 0 ? "+" : "-") + m * x1;
-        return "";
+
+        String mx = m + "x";
+
+        double mx1 = m * x1;
+
+        double y1Mx1 = (y1 > 0 ? y1 - mx1 : y1 + mx1);
+
+        return "y = ".concat(mx).concat((y1Mx1 > 0 ? " + " : " - ")).concat(String.valueOf(y1Mx1));
     }
 }
