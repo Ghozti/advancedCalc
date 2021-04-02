@@ -17,7 +17,7 @@ public class Algebra {
         return "y = ".concat(mx).concat((y1Mx1 > 0 ? " + " : " - ")).concat(String.valueOf(y1Mx1));
     }
 
-    public static double slope(double y2, double y1, double x2, double x1){
-        return (y2 - y1) / (x2 - x1);
+    public static String slope(double y2, double y1, double x2, double x1){
+        return  "m = ".concat(String.valueOf((y2 - y1) / (x2 - x1)));
     }
 }
