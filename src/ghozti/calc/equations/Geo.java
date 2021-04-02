@@ -1,7 +1,5 @@
 package ghozti.calc.equations;
 
-import ghozti.calc.Main;
-
 public class Geo {
 
     public static String distance(double x2, double x1, double y2, double y1){
@@ -12,5 +10,19 @@ public class Geo {
 
     public static String missingSide(double a, double b){
         return "missing side = ".concat(String.valueOf(180 - (a+b)));
+    }
+
+    public static String cos(){
+        System.out.println( "  |\\\n" +
+                            "  | \\\n" +
+                            "  |  \\\n" +
+                            "  |   \\\n" +
+                            "a |    \\ c\n" +
+                            "  |     \\\n" +
+                            "  |      \\\n" +
+                            "  |       \\\n" +
+                            "  |________\\\n" +
+                            "   b");
+        return "";
     }
 }
