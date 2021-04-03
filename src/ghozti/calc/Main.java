@@ -6,6 +6,6 @@ import ghozti.calc.equations.Geo;
 public class Main {
 
     public static void main(String[] args) {
-        Geo.cos();
+        System.out.println(Geo.cos(60,0,6));
     }
 }
